@@ -3,10 +3,12 @@ from langchain_core.messages import BaseMessage, HumanMessage
 from langgraph.graph import END, MessageGraph 
 from chains import generate_chain, reflect_chain
 
+import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 REFLECT = "reflect"
 GENERATE = "generate"
