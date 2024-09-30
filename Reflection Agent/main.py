@@ -43,4 +43,16 @@ graph.get_graph().print_ascii()
 
 if __name__ == "__main__":
 
-    print("Successful.")
+    inputs = HumanMessage(content = """
+
+                Make this summary better :
+                         
+                        Vice President, IPV Projects and Data Science at Nomura, with international experience, including 
+                        time on Wall Street. Creator of the ‘megaprofiler’ Python library, which helps data scientists 
+                        and engineers thoroughly understand datasets before analysis or modelling. Specializes in machine 
+                        learning, generative AI, quantitative finance, and data-driven solutions, with a proven track record
+                        of leading global projects and driving innovation in financial product valuations.
+
+            """)
+    
+    response = graph.invoke(inputs)
