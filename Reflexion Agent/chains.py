@@ -37,4 +37,4 @@ chain = reflection_prompt_template | llm
 response = chain.invoke(input={"messages": [human_message]})
 
 # Print the result
-print(response)
+print(response.content)
